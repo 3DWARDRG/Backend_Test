@@ -120,8 +120,5 @@ USE_TZ = True
 STATIC_URL = 'static/'
 # Al final del archivo:
 # CORS (desarrollo y producción)
-if DEBUG:
-    CORS_ALLOW_ALL_ORIGINS = True
-else:
-    CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS', default='https://trip-planner.vercel.app').split(',')
+CORS_ALLOW_ALL_ORIGINS = True
 
